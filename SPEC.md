@@ -4,7 +4,7 @@
 **Date:** 2026-11-11
 **Supersedes:** v0.1, which was distilled from a [design conversation](https://chatgpt.com/share/6af2913c-be70-83e9-a28c-74d822901d98) and has since been corrected on several substantial points.
 **Companions:** [`GLOSSARY.md`](./GLOSSARY.md) for vocabulary, [`docs/adr/`](./docs/adr/) for decisions whose rationale would otherwise be lost.
-**External dependency:** ESL v1.1, specified in `~/Training/see/docs/esl.md`.
+**ESL specification:** v1.1, vendored at [`docs/esl.md`](./docs/esl.md) — a snapshot taken 2026-11-11 of `~/Training/see/docs/esl.md`, which remains upstream.
 
 ## 1. What this is
 
@@ -160,7 +160,7 @@ The embedding model is deliberately unchosen. See §12.
 
 ## 8. ESL and the `.epist` record
 
-ESL v1.1 — **Epistemic Synthetic Language** — is specified in `~/Training/see/docs/esl.md` and is an external dependency, not defined here. In summary: a synthetic, obligatory morphology over a fixed six-slot template, `ROOT-ACCESS-EVIDENCE-ASPECT-FRAME-ENDORSEMENT`, built so that omitting provenance is a structural malformation rather than a stylistic choice.
+ESL v1.1 — **Epistemic Synthetic Language** — is specified in [`docs/esl.md`](./docs/esl.md) and is a dependency of this project, not a part of it. The vendored copy is a snapshot; `~/Training/see/docs/esl.md` is where it is authored, and the two can drift. In summary: a synthetic, obligatory morphology over a fixed six-slot template, `ROOT-ACCESS-EVIDENCE-ASPECT-FRAME-ENDORSEMENT`, built so that omitting provenance is a structural malformation rather than a stylistic choice.
 
 Transpilation is a **compilation**: it either produces a well-formed ESL unit or emits diagnostics. The `.epist` record stores both.
 
